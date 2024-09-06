@@ -1,0 +1,130 @@
+
+.carousel{
+    width: 70%;
+    height: 295px;
+    background-color: #d42d4e;
+    margin: 0 auto;
+    border-radius: 16px;
+    padding: 20px 20px;
+
+    .carousels{
+        width: 100%;
+        height: 100%;
+
+        .swiper-slide{
+            width: 162px;
+            height: inherit;
+            background-color: white;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-evenly;
+            img {
+                width: 132px;
+                height: 132px;
+                object-fit: cover;
+            }
+
+            p{
+                color: rgb(98, 102, 109);
+                font-size: 12px;
+               
+                font-family: yekan;
+                
+            }
+            div.discount {
+                width: 100%;
+                padding: 0 10px;
+                display: flex;
+                justify-content: space-between;
+                flex-flow: row-reverse;
+                gap: 15px;
+                
+                .left{
+                    display: flex;
+                    align-items: center;
+                    flex-flow: row-reverse;
+                    color: rgb(63, 64, 100);
+                    font-size: 14px;
+                    font-weight: 700;
+                    font-family: yekan;
+                }
+                .right{
+                    display: block;
+                    width: 34px;
+                    height: 20px;
+                    border-radius: 999px;
+                    line-height: 20px;
+                    color: white;
+                    background-color: #d42d4e;
+                    font-size: 12px;
+                    font-weight: 700;
+                    font-family: yekan;
+                }
+            }
+            div {
+                width: 100%;
+                display: flex;
+                justify-content: end;
+                padding-left: 25px;
+                .off{
+                    color: rgb(192, 194, 197);
+                    font-size: 12px;
+                    font-weight: 400;
+                    font-family: yekan;
+                    text-decoration: solid line-through rgb(192, 194, 197);
+
+                }
+            }
+        }
+        .borders{
+           
+            border-radius: 0 8px 8px 0;
+        }
+        .lastBorder{
+            border-radius: 8px 0 0 8px;
+        }
+        .active{
+            width: 166px;
+            height: inherit;
+            background-color: #d42d4e;
+        }
+        .active{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: space-around;
+
+            .amazing{
+                width: 88px;
+                height: 88px;
+            }
+
+            a {
+                display: flex;
+                flex-flow: row-reverse wrap;
+                align-items: center;
+
+                gap: 10px;
+                text-decoration: none;
+                color: white;
+                font-size: 12px;
+                font-weight: bold;
+                font-family: yekan;
+
+                .arrow {
+                    width: 18px !important;
+                    height: 18px !important;
+                    font-size: 12px !important;
+                    font-family: yekan;
+                    background-color: teal;
+                    
+                   
+                }
+              
+                
+            }
+        }
+
+        
+    }
+}

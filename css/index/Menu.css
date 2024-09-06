@@ -1,0 +1,86 @@
+
+
+.subMenu{
+    width: 60%;
+    height:60vh ;
+    background-color:white;
+    position: absolute;
+    top: 100%;
+    display: none;
+    cursor: pointer;
+    z-index: 5;
+  
+
+    .rightMenu{
+        width: 15%;
+        height: 60vh;
+        
+        overflow: auto;
+        direction: ltr;
+        
+        div {
+            width: 100%;
+            height: 52px;
+        
+           
+
+            a{
+                
+                display: block;
+                width: 100%;
+                height: inherit;
+                padding-right: 5px;
+                text-align: right ;
+                background-color: rgb(192, 194, 197);
+                transition: 300ms;
+                line-height: 52px;
+                font-size: 12px;
+                font-weight: 700;
+                font-family: yekan;
+
+                &:hover{
+                    color: rgb(239, 57, 78);
+                    background-color: white;
+                }
+                svg  {
+                    width: 24px !important;
+                    height: 24px !important;
+                    vertical-align: middle;
+                    margin-left: 5px;
+                }
+                .subSubMenu{
+                    width: 85% !important;
+                    height: 60vh !important;
+                    overflow: auto;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+    
+                    .root{
+                        width: 25%;
+                        height: 60vh;
+                        background-color: tan;
+                        display: inline-block;
+                        margin-left: -3px;
+                        display:none;
+                        transition: 300ms;
+                    }
+    
+                }
+               
+                &:hover .root {
+                    display: inline-block;
+                }
+            }
+         
+           
+
+        }
+    }
+}
+.bold:hover .subMenu{
+    display: block !important;
+
+}
+
+
